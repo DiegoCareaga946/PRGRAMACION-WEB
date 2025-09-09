@@ -1,0 +1,23 @@
+.title{
+    color:dimgrey;
+    text-align: center;
+    font-size: 24px;
+}
+.subtitle{
+    color: cadetblue;
+    border: 2px solid rgb(0, 0, 0);
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+*{
+    color: black;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.body{
+    background-color: rgb(209, 209, 209);
+}
+.list{
+    background-color: bisque;
+}
