@@ -5,3 +5,4 @@
 * [03: Ejercicio #2 - Listas, Multimedia y tablas](/Programacion_web/Ejercicio_2.html)
 * [04: Ejercicio #3 - Formularios y metadatos](/Programacion_web/Ejercicio_3.html)
 * [05: Ejercicio #4 - Formato de texto, fuentes, fondos y border](/Programacion_web/Ejercicio_4.html)
+* [06: Ejercicio #2 - Tarjeta](/Programacion_web/Ejercicio_5.html)
