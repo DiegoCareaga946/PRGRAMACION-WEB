@@ -78,6 +78,15 @@ body {
     padding: var(--padding-zero);
 }
 
+.container-rigbysales {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(249, 240, 186), rgb(220, 157, 90));
+    height: var(--color-background-block);
+    margin: var(--margin-zero);
+    padding: var(--padding-block);
+}
+
 .title-rigbysales {
     display: flex;
     color: white;
@@ -86,14 +95,6 @@ body {
     text-shadow:0 7px var(--primary-color);
 }
 
-.color_block1 {
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(rgb(249, 240, 186), rgb(220, 157, 90));
-    height: var(--color-background-block);
-    margin: var(--margin-zero);
-    padding: var(--padding-block);
-}
 .color_block2 {
     display: flex;
     background:var(--primary-color);
@@ -101,6 +102,7 @@ body {
     margin: var(--margin-zero);
     padding: var(--padding-block);
 }
+
 .color_block3 {
     display: flex;
     background:goldenrod;
