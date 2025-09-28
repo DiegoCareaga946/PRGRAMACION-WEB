@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+    <link rel="stylesheet" href="../Programacion_web/css/style_Ejercicio9.css">
+    <header class="header_container">
+    <h1 class="header_title">RIGBYSTORE</h1>
+    <nav class="header_option_container">
+        <ul> 
+            <li><a href="#launch" class="header_option">LANZAMIENTO</a>
+                <ul class="submenu">
+                        <li><a href="#">Próximas fechas</a></li>
+                        <li><a href="#">Futuros productos</a></li>
+                </ul>
+            </li>
+            <li><a href="#aboutUs" class="header_option">SOBRE NOSOTROS</a>
+                <ul class="submenu">
+                    <li><a href="#">Contactos</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                </ul>
+            </li>
+            <li><a href="#mailList" class="header_option">LISTA DE CORREOS</a>
+                <ul class="submenu">
+                            <li><a href="#">Registrate</a></li>
+                </ul>
+            </li>
+        </ul>
+        </nav>
+        <div class="button_header_container">
+            <button class="button_style_moneyType">MXN</button>
+            <button class="button_image_cart"><img src="../Programacion_web/img/carrito_compra.png" width="40px" height="40px"></button>
+        </div>
+    </header>
+    <body>
+        <!-- Lugar provisional para formulario -->
+        <div class="color_block1">
+            <h1 class="title-rigbysales">RIGBYSALES 10%</h1>
+        </div>
+        <div class="color_block2">
+             <section class="container">
+                <div class="card">
+                    <div class="card-thumbnail-container">
+                        <img class="card-thumbnail" src="../Programacion_web/img/rigby_tshirt.jpeg" alt="">
+                    </div>
+                    <h4 class="card-title line-between-text">T-SHIRT RIGBY</h4>
+                    <p class="card-price">$ 250 MXN</p>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail-container">
+                        <img class="card-thumbnail" src="../Programacion_web/img/case_rigby.jpg" alt="">
+                    </div>
+                    <h4 class="card-title line-between-text">CASE RIGBY</h4>
+                    <p class="card-price">$ 200 MXN</p>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail-container">
+                        <img class="card-thumbnail" src="../Programacion_web/img/cup_rigby.webp" alt="">
+                    </div>
+                    <h4 class="card-title line-between-text">CUP RIGBY</h4>
+                    <p class="card-price">$ 100 MXN</p>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail-container">
+                        <img class="card-thumbnail" src="../Programacion_web/img/rigby_tshirt.jpeg" alt="">
+                    </div>
+                    <h4 class="card-title line-between-text">T-SHIRT RIGBY</h4>
+                    <p class="card-price">$ 250 MXN</p>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail-container">
+                        <img class="card-thumbnail" src="../Programacion_web/img/cup_rigby.webp" alt="">
+                    </div>
+                    <h4 class="card-title line-between-text">CUP RIGBY</h4>
+                    <p class="card-price">$ 100 MXN</p>
+                </div>
+                <div class="card">
+                    <div class="card-thumbnail-container">
+                        <img class="card-thumbnail" src="../Programacion_web/img/case_rigby.jpg" alt="">
+                    </div>
+                    <h4 class="card-title line-between-text">CASE RIGBY</h4>
+                    <p class="card-price">$ 200 MXN</p>
+                </div>
+            </section>
+        </div>
+        <div class="color_block3">
+            <div>
+                <form action="Ejercicio_9.html" method="get">
+                    <div class="review_container">
+                        <h3>Reseña</h3>
+                            <fieldset>
+                                <!-- Título de resena -->
+                                <div class="review_section_container">
+                                    <label for="tituloReseña">Título</label>
+                                    <br>
+                                    <input type="text" name="Título de resena" id="tituloReseña" placeholder="Título de reseña...">
+                                </div>
+                
+                                <br>
+                                <!-- Descripción resena -->
+                                <div class="review_section_container">
+                                    <label for="descripcion">Descripción</label>
+                                    <br>
+                                    <textarea name="Descripcion" id="descripcion" placeholder="Escribe tu experiencia..."></textarea>
+                                </div>
+                
+                                <br>
+                                <!-- Selección estrellas resena -->
+                                <div class="review_section_container">
+                                    <label for="estrella">Estrellas</label>
+                                    <br>
+                                    <select name="estrellas" id="estrella">
+                                        <optgroup>
+                                            <option value="0">-- Seleccionar estrellas --</option>
+                                            <option value="1">1 Estrellas</option>
+                                            <option value="2">2 Estrellas</option>
+                                            <option value="3">3 Estrellas</option>
+                                            <option value="4">4 Estrellas</option>
+                                            <option value="5">5 Estrellas</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                
+                                <br>
+                                <!-- Autocompletado de tipo de usuario -->
+                                <div class="review_section_container">
+                                    <label for="tipoUsuarios">Tipo de Usuario</label>
+                                    <br>
+                                        <input name="tipo de Usuario" list="tipoUsuarios" id="tipoUsuario" placeholder="Define tipo de usuario...">
+                                        <datalist id="tipoUsuarios">
+                                            <option value="Nuevo usuario">1</option>
+                                            <option value="Usuario promedio">2</option>
+                                            <option value="Usuario veterano">3</option>
+                                        </datalist>
+                                </div>
+                                <br>
+                            </fieldset>
+                            <button class="button_send" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
