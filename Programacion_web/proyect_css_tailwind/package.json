@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14"
+  },
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/style.css -o ./public/output.css --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "daisyui": "^5.1.31",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.14"
+  },
+  "name": "proyect_css_tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

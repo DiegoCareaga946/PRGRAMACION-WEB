@@ -357,10 +357,29 @@ select:focus {
     background: rgb(113, 81, 58);
 }
 
+.button-card {
+    border: 0;
+    border-radius: 5%;
+    margin: 10% 0 10% 0;
+    font-size: 18px;
+    font-weight: bold;
+    justify-items: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background: rgb(113, 81, 58);
+}
+
 .button-send:hover {
     transition: 0.2s;
     color: var(--color-text);
     background-color: var(--secundary-color);
+}
+
+.button-card:hover {
+    transition: 0.2s;
+    background-color: rgb(144, 102, 70);
 }
 
 @media (max-width: 1300px) {

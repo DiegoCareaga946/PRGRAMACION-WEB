@@ -1,0 +1,17 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../Programacion_web/font/Poppins-Regular.ttf);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: rgb(144, 102, 70);
+    --secundary-color: rgb(220, 157, 90);
+}
