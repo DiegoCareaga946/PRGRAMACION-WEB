@@ -6,46 +6,44 @@
     <link href="../public/output.css" rel="stylesheet">
     <title>RigbyStore</title>
 </head>
-<body class="min-w-100 min-h-screen flex flex-col ">
-    <nav class="navbar justify-between bg-[#71513A] text-white px-4">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <label tabindex="0" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </label>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#71513A] rounded-box w-52">
-                    <li><a>LANZAMIENTOS</a></li>
-                    <li><a>SOBRE NOSOTROS</a></li>
-                    <li><a>LISTA DE CORREOS</a></li>
-                </ul>
-            </div>
-            <a class="text-2xl font-semibold">RIGBYSTORE</a>
+<body class="min-w-100 w-full min-h-screen flex flex-col ">
+   <nav class="navbar bg-[#71513A] shadow-sm">
+    <div class="navbar-start">
+      <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
         </div>
-        <div class="navbar-end hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-                <li><a>LANZAMIENTOS</a></li>
-                <li><a>SOBRE NOSOTROS</a></li>
-                <li><a>LISTA DE CORREOS</a></li>
-            </ul>
+        <ul
+          tabindex="-1"
+          class="menu menu-sm dropdown-content bg-[#DC9D5A] rounded-box z-1 mt-3 w-52 p-2 shadow">
+          <li><a>LANZAMIENTO</a></li>
+          <li><a>SOBRE NOSOTROS</a></li>
+          <li><a>LISTA DE CORREOS</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost text-xl">RIGBYSTORE</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>LANZAMIENTOS</a></li>
+        <li><a>SOBRE NOSOTROS</a></li>
+        <li><a>LISTA DE CORREOS</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+      <button class="btn btn-sm text-2xl bg-[#DC9D5A] border-transparent cursor-pointer">$</button>
+      <button class="btn btn-sm bg-transparent border-transparent cursor-pointer">
+          <img class="size-6" src="img/carrito_compra.png" width="40px" alt="">
+      </button>
+    </div>
+  </nav>
+    <section class="flex flex-col items-center px-4 bg-[#906646] lg:flex lg:flex-row lg:h-screen">
+        <div class="m-5 p-10 bg-[#DC9D5A] content-center">
+            <img src="img/case_rigby.jpg" alt="">
         </div>
-        <div class="flex justify-end">
-            <button class="btn btn-sm text-2xl bg-[#DC9D5A] border-transparent cursor-pointer">$</button>
-            <button class="btn btn-sm bg-transparent border-transparent cursor-pointer">
-                <img class="size-6" src="img/carrito_compra.png" width="40px" alt="">
-            </button>
-        </div>
-    </nav>
-    <section class="grid grid-col justify-items-center px-4 bg-[#906646] lg:flex lg:h-screen">
-        <div class="m-5 p-10 bg-[#DC9D5A] content-center min-w-90">
-            <img src="img/case_rigby.jpg" width="1000px" alt="">
-        </div>
-        <div class="m-5 p-10 bg-[#C5B9A0] justify-items-center items-center content-center lg:flex flex-col">
+        <div class="m-5 p-5 bg-[#C5B9A0] justify-items-center items-center content-center lg:flex flex-col">
             <h1 class="text-[40px] m-4 text-black text-center">RIGBY CASE</h1>
-            <h2 class="text-[20px] m-2 p-10 bg-black-400 text-black text-justify">Ten la oportunidad de siempre llevar contigo a uno de los gatos mas conocidos del internet con esta carcasa para mobile con una cantidad increible de opciones y adaptada para cualquier mobile moderno.</h2>
+            <h2 class="text-[20px] m-2 bg-black-400 text-black text-justify">Ten la oportunidad de siempre llevar contigo a uno de los gatos mas conocidos del internet con esta carcasa para mobile con una cantidad increible de opciones y adaptada para cualquier mobile moderno.</h2>
             <h2 class="m-4 text-[50px] text-black">$300 MXN</h2>
             <h3 class="m-4 text-black">Puntuación: 4.9/5 ⭐</h3>
             <div class="m-6 flex flex-col items-center lg:flex-row lg:justify-start">
