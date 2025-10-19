@@ -16,3 +16,4 @@
 * [13: Ejercicio #9 - Examen -- Sitio Web](/Programacion_web/Ejercicio_11.html)
 ## Ejercicios JavaScript.-
 * [01: Ejercicio #1 - Calculadora](/Programacion_web/JavaScript/01_javaScript/index.html)
+* [02: Ejercicio #2 - Manipulación de estilos](/Programacion_web/JavaScript/02_javaScript/index.html)
