@@ -17,3 +17,4 @@
 ## Ejercicios JavaScript.-
 * [01: Ejercicio #1 - Calculadora](/Programacion_web/JavaScript/01_javaScript/index.html)
 * [02: Ejercicio #2 - Manipulación de estilos](/Programacion_web/JavaScript/02_javaScript/index.html)
+* [03: Ejercicio #3 - Calculadora visual](/Programacion_web/JavaScript/03_javaScript/index.html)
