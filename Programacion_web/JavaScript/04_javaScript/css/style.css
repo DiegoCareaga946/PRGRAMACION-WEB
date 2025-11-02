@@ -1,0 +1,93 @@
+body {
+    align-items: center;
+    justify-items: center;
+    margin: 10%
+}
+
+p {
+    overflow-x: auto;
+    font-size: 18px
+}
+
+.titulo-tarea {
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    background-color: rgb(255, 187, 98);
+    overflow-y: auto;
+    border-radius: 15px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 208, 196);
+    border-radius: 15px;
+    margin: 20px;
+    width: 200px;
+}
+
+.tarea {
+    display: flex;
+    background-color: #fda48e;
+    justify-content: space-between;
+    padding: 2px;
+    margin: 5px;
+    width: 300px;
+}
+
+.button-delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    margin: 2px;
+    padding: 1px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff5c5c;
+    color: white;
+    font-size: 18px;
+}
+
+.button-delete:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #ff5c5c;
+    transition: .3s
+}
+
+.add-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.input-style {
+    height: 20px;
+}
+
+.add-button {
+    width: 100px;
+    height: 30px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin: 0 0 0 5px;
+    font-size: 18px;
+}
+
+.add-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: cornflowerblue;
+    transition: .3s
+}
