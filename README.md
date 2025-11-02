@@ -19,3 +19,5 @@
 * [02: Ejercicio #2 - Manipulación de estilos](/Programacion_web/JavaScript/02_javaScript/index.html)
 * [03: Ejercicio #3 - Calculadora visual](/Programacion_web/JavaScript/03_javaScript/index.html)
 * [04: Ejercicio #4 - Lista de tareas](/Programacion_web/JavaScript/04_javaScript/index.html)
+* [05: Ejercicio #5 - Modules (calculadora)](/Programacion_web/JavaScript/03_javaScript/js)
+* [05: Ejercicio #5 - Modules (lista-tareas)](/Programacion_web/JavaScript/04_javaScript/js)

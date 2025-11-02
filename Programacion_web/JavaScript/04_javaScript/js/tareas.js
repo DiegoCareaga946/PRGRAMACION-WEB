@@ -1,8 +1,8 @@
-let texto;
-let tareas = [];
-let contenedorPrincipal = document.querySelector(".homework-container")
-let input = document.getElementById("texto");
+import { actualizarLocalStorage, obtenerTareas } from "./storage.js"
 
+let tareas = [] = obtenerTareas();
+let contenedorPrincipal = document.querySelector(".homework-container");
+let input = document.getElementById("texto");
 
 function verificarTarea() {
     let texto = input.value.trim();
@@ -29,7 +29,14 @@ function crearTarea(texto) {
     return tarea;
 }
 
-function agregarTarea(tarea) {
+export function procesadorTarea() {
+    if(verificarTarea()) {
+        const tarea = crearTarea(input.value.trim());
+        agregarTarea(tarea);
+    }
+}
+
+export function agregarTarea(tarea) {
     let contenedorTarea = document.createElement('div');
     contenedorTarea.classList.add('tarea');
     contenedorTarea.id = tarea.id;
@@ -50,14 +57,6 @@ function agregarTarea(tarea) {
     
     contenedorPrincipal.append(contenedorTarea);
 }
-
-function procesadorTarea() {
-    if(verificarTarea()) {
-        const tarea = crearTarea(input.value.trim());
-        agregarTarea(tarea);
-    }
-}
-
 
 function crearCheckbox(nombreTarea, tarea){
     let checkbox = document.createElement('input');
@@ -93,22 +92,6 @@ function crearBotonEliminar(){
     return botonEliminar;
 }
 
-function obtenerTareas(){
-    tareas = JSON.parse(localStorage.getItem('tareas') || []);
-}
-
-function actualizarLocalStorage(tareas) {
-    localStorage.setItem('tareas', JSON.stringify(tareas));
-}
-
-function mostrarTareas() {
-    contenedorPrincipal.innerHTML = '';
-    let tareas = JSON.parse(localStorage.getItem('tareas') || []);
-    tareas.forEach((tarea) => {
-        agregarTarea(tarea);
-    });
-}
-
 function cambiarTerminado(id, terminado) {
     let marcarTerminada = tareas.find((tarea) => tarea.id == id);
     marcarTerminada.terminado = terminado;
@@ -118,9 +101,4 @@ function cambiarTerminado(id, terminado) {
 function eliminarTarea(id) {
     tareas = tareas.filter((tarea) => tarea.id != id);
     actualizarLocalStorage(tareas);
-}
-
-window.onload = () => {
-    obtenerTareas();
-    mostrarTareas();
 }
