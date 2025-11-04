@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Programacion_web/JavaScript/05_js/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Detalles del gato</h1>
+    <section id="detalles" class="cat-details">
+
+    </section>
+    <script type="module">
+        import { getBreedDetails } from './js/api.js';
+
+        const breedId = new URLSearchParams(window.location.search).get('id'); 
+        
+        if(breedId) {
+            const data = await getBreedDetails(breedId);
+            const breed = data.breeds[0];
+    
+            const detalles = document.getElementById('detalles');
+            const catCard = document.createElement('div');
+            catCard.classList.add('cat-details');
+    
+            catCard.innerHTML = `
+                <img src="${data?.url || 'https://via.placeholder.com/150'}" alt="${breed.name}">
+                <p>Temperamento: ${breed.temperament || 'Temperamento no disponible'}</p>
+                <p>Origen: ${breed.origin || 'origen no disponible'}</p>
+                <p>Codigo de país: ${breed.country_codes || 'codigo de pais no disponible'}</p>
+                <p>Calidad de vida: ${breed.life_span || 'Vida promedio no disponible'}</p>
+                <a class="see-details-button" href=${breed.wikipedia_url}id=${breed.reference_image_id}" target="_blank">Más info 
+            `;
+            detalles.appendChild(catCard);
+        }
+        
+    </script>
+</body>
+</html>

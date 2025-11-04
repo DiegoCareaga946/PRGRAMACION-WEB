@@ -21,3 +21,4 @@
 * [04: Ejercicio #4 - Lista de tareas](/Programacion_web/JavaScript/04_javaScript/index.html)
 * [05: Ejercicio #5 - Modules (calculadora)](/Programacion_web/JavaScript/03_javaScript/js)
 * [05: Ejercicio #5 - Modules (lista-tareas)](/Programacion_web/JavaScript/04_javaScript/js)
+* [05: Ejercicio # -6 Modules (lista-tareas)](/Programacion_web/JavaScript/04_javaScript/js)
